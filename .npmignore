@@ -38,6 +38,11 @@ yarn-error.log*
 /out/*.bin
 /.github
 /src
+tsconfig.json
+tsconfig.*.json
+jest.config.js
+.prettierrc
+.editorconfig
 
 # System Files
 .DS_Store
