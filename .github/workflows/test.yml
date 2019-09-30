@@ -1,13 +1,9 @@
-name: Dev
+name: Pull Request Test
 
 on:
   pull_request:
     branches:
       - master
-      - dev
-  push:
-    branches:
-      - dev
 
 jobs:
   build:
