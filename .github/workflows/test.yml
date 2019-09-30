@@ -3,6 +3,7 @@ name: Dev
 on:
   pull_request:
     branches:
+      - master
       - dev
   push:
     branches:
