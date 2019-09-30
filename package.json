@@ -1,0 +1,50 @@
+{
+  "name": "@silkjs/pocket",
+  "version": "0.0.1",
+  "description": "effect",
+  "main": "dist/main.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "start": "tsc --build tsconfig.dev.json",
+    "build": "tsc --build tsconfig.app.json",
+    "lint": "eslint src/**/*.ts --fix",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silkjs/pocket.git"
+  },
+  "keywords": [],
+  "authors": [
+    {
+      "name": "DasonCheng",
+      "email": "dasoncheng@foxmail.com"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silkjs/pocket/issues"
+  },
+  "homepage": "https://github.com/silkjs/pocket#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "codecov": "^3.6.1",
+    "eslint": "^6.5.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.7",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.3"
+  }
+}
