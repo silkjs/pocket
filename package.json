@@ -1,6 +1,6 @@
 {
   "name": "@silkjs/pocket",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "effect",
   "main": "dist/main.js",
   "directories": {
