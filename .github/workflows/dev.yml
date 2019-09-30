@@ -20,4 +20,4 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm run test
-      - run: codecov -t ${{secrets.codecov_token}}
+      - run: npx codecov -t ${{secrets.codecov_token}}
