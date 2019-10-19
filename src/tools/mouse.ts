@@ -30,6 +30,7 @@ export function fromElement(target: HTMLElement) {
           type: EventType.MOUSE_DOWN,
           offset_start: [offsetX, offsetY],
           client_start: [clientX, clientY],
+          client_end: [clientX, clientY],
         }),
       ),
     ),
@@ -72,5 +73,17 @@ export function fromElement(target: HTMLElement) {
       wheel: 0,
     }),
     filter(data => data.counter >= 0),
+    map(({ type, offset_start, client_start, client_end, wheel }) => ({
+      type,
+      point: {
+        x: offset_start[0],
+        y: offset_start[1],
+      },
+      offset: {
+        x: client_end[0] - client_start[0],
+        y: client_end[1] - client_start[1],
+      },
+      wheel,
+    })),
   );
 }
