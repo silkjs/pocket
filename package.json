@@ -4,7 +4,7 @@
   "description": "effect",
   "main": "dist/main.js",
   "directories": {
-    "doc": "doc"
+    "doc": "docs"
   },
   "scripts": {
     "start": "rm -rf dist && tsc --build tsconfig.dev.json",
