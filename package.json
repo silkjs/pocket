@@ -7,8 +7,8 @@
     "doc": "doc"
   },
   "scripts": {
-    "start": "tsc --build tsconfig.dev.json",
-    "build": "tsc --build tsconfig.app.json",
+    "start": "rm -rf dist && tsc --build tsconfig.dev.json",
+    "build": "rm -rf dist && tsc --build tsconfig.app.json",
     "lint": "eslint src/**/*.ts --fix",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
@@ -17,6 +17,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/silkjs/pocket.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "keywords": [],
   "authors": [
@@ -50,5 +53,7 @@
     "typescript": "^3.6.3",
     "vuepress": "^1.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
 }
