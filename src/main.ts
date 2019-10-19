@@ -1,7 +1,4 @@
-export const sayHello = (name: string) => {
-  console.log(`Hello, I'm ${name}`);
-};
-
+export * from './tools/mouse';
 export const add = (a: number, b: number) => {
   return a + b;
 };

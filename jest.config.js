@@ -9,6 +9,7 @@ module.exports = {
     'ts-jest': {
       tsConfig: 'tsconfig.spec.json',
     },
+    window: {},
   },
   moduleFileExtensions: ['ts', 'tsx', 'js'],
   testEnvironment: 'node',
